@@ -1,0 +1,29 @@
+Create s3 bucket and add the policy for permissions
+
+Bucketname: trohio
+
+
+BucketPolicy:
+
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1633864698361",
+    "Statement": [
+        {
+            "Sid": "Stmt1633864695689",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::trohio"
+        }
+    ]
+}
+
+create folder for different modules
+
+network
+compute
+database
+storage
